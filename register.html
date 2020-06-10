@@ -9,16 +9,16 @@
 	<header>
 		<h1>Campground In The Sky</h1>
 		<nav>
-			<ul>
-				<li><a href="index.html" target="_blank">Home</a></li>
+			<ul class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
 				<li>Register</li>
-				<li><a href="newpage.html" target="_blank">New Page</a></li>
+				<li><a href="builder.html">Builder</a></li>
 			</ul>
 		</nav>
 	</header>
 	<section>
 		<h2>Register Now!</h2>
-	<div id="div2">
+	<div class="container">
 		<form method="GET">
 			First Name: <input type="text" name="firstname" minlength="1" maxlength="20"><br>
 			Last Name: <input type="text" name="lastname" minlength="1" maxlength="20"><br>
@@ -29,26 +29,21 @@
 			<input type="radio" name="gender" value="Male">Male<br>
 			<input type="radio" name="gender" value="Female">Female<br>
 			<input type="radio" name="gender" value="Other">Other<br>
-			What makes a campground happy for you?:<br>
+			What are your campground necessities?:<br>
 			<input type="checkbox" name="happyitems" value="Flowers">Flowers<br>
 			<input type="checkbox" name="happyitems" value="Bushes">Bushes<br>
 			<input type="checkbox" name="happyitems" value="Trees">Trees<br>
 			<input type="checkbox" name="happyitems" value="Wheat">Wheat<br>
 			<input type="checkbox" name="happyitems" value="Campfire">Campfire<br>
-			<input type="checkbox" name="happyitems" value="Tractor">Tractor<br>
 			<input type="checkbox" name="happyitems" value="Other">Other<br>
-			Experience with Tools:<br>
-			<select name="Tools" multiple="multiple">
-				<option value="shovel" name="tools">Shovel</option>
-				<option value="rake" name="tools">Rake</option>
-				<option value="saw" name="tools">Saw</option>
+			Favorite Tool:<br>
+			<select name="Tools">
 				<option value="axe" name="tools">Axe</option>
-				<option value="hammer" name="tools">Hammer</option>
-			</select><br>
+				<option value="shovel" name="tools">Shovel</option>
+			</select><br><br>
 			<input type="submit" value="Register">
 			<input type="reset">
 		</form>
-		<img id="campfire" src="content/images/campfire.jpg" width="200px" height="200px">
 	</div>
 	
 </body>

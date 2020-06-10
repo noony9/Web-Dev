@@ -1,7 +1,13 @@
+/* ----- Global ----- */
+
 * {
-	cursor: pointer;
 	font-family: 'Helvetica';
 	color: black;
+}
+
+nav {
+	border-bottom: 5px solid #256F5B;
+	border-top: 5px solid #256F5B;
 }
 
 body {
@@ -14,38 +20,18 @@ h1 {
 	font-weight: bold;
 	font-size: 180%;
 	font-family: 'Poiret One', cursive;
+	margin-left: 1.5rem;
 }
 
 h2 {
 	text-align: center;
-	border: 5px solid #256F5B;
+	border: 2.5px solid #256F5B;
 	background-color: #E8BD7990;
 	font-family: 'Helvetica';
 }
 
-.information {
-	font-family: helvetica;
-
-}
-
-div {
-	display: flex;
-	align-items: flex-start;
-}
-
-#div1 {
-
-}
-
-#div2 {
-	border: 5px solid #256F5B;
-	background-color: #E8BD7990;
-	text-align: left;
-	margin: 20px;
-}
-
-#campfire {
-	
+span {
+	font-size: 2rem;
 }
 
 footer {
@@ -53,6 +39,77 @@ footer {
 	text-align: center;
 	border-top: 5px dotted #256F5B ;
 }
+
+button {
+	border-radius: 10;
+}
+
+.breadcrumb {
+	padding: 10px 15px;
+	list-style: none;
+}
+
+.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+}
+
+.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0"; /* add slash before and behind each li */
+}
+
+.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+}
+
+.information {
+	font-family: helvetica;
+
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	border: 5px solid #256F5B;
+	background-color: #E8BD7990;
+	text-align: left;
+	margin: 20px;
+}
+
+.toolbar img {
+	display: flex-inline;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 2px 2px 2px 2px;
+	width: 5rem;
+	height: 5rem;
+}
+
+.campsite {
+	width: 99.5%;
+	min-height: 500px;
+	border: 5px solid #256F5B;
+	background-color: #E8BD7910;
+}
+
+/* ----- Hover ----- */
+.breadcrumb li a:hover {
+	font-size: 1.2rem;
+	color: #01447E;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+input, option:hover {
+	cursor: pointer;
+}
+
+
+
 
 /* Cascading Style Sheets at the most basic level indicates that the order of CSS rules matter.
 
@@ -73,4 +130,6 @@ element1 + element2 (select any element2 that is exactly after the element1)
 -Specificity: (how drilled down, -specificity calculator search on google) (inline styles are more specific as well)
 -Importance: (!importance)
 -Source Order: (links to stylesheet order, 1-2-3, 3rd linked stylesheet wins)
+
+  Look into css minify (tool to remove white space)
 */
