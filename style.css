@@ -1,0 +1,76 @@
+* {
+	cursor: pointer;
+	font-family: 'Helvetica';
+	color: black;
+}
+
+body {
+	background-image: url(content/images/background.jpg);
+	background-size: cover;
+}
+
+h1 {
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 180%;
+	font-family: 'Poiret One', cursive;
+}
+
+h2 {
+	text-align: center;
+	border: 5px solid #256F5B;
+	background-color: #E8BD7990;
+	font-family: 'Helvetica';
+}
+
+.information {
+	font-family: helvetica;
+
+}
+
+div {
+	display: flex;
+	align-items: flex-start;
+}
+
+#div1 {
+
+}
+
+#div2 {
+	border: 5px solid #256F5B;
+	background-color: #E8BD7990;
+	text-align: left;
+	margin: 20px;
+}
+
+#campfire {
+	
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	border-top: 5px dotted #256F5B ;
+}
+
+/* Cascading Style Sheets at the most basic level indicates that the order of CSS rules matter.
+
+.class
+#id
+*
+element (select all of element)
+element1, element2 (select all of each element and element)
+element1 element2 (select all element2 that is inside element1)
+element1 > element2 (select all element2 that is a parent of element1)
+element1 + element2 (select any element2 that is exactly after the element1)
+:hover (ex: element, element:hover) (change style to on mouse hover)
+:last-child (only the last-child of element is affected)
+:first-child (only the first-child of element is affected)
+!important (not recommended) (ex: color: pink !important;) (overrides any cascading styles)
+
+  What selectors win out in the cascade depends on:
+-Specificity: (how drilled down, -specificity calculator search on google) (inline styles are more specific as well)
+-Importance: (!importance)
+-Source Order: (links to stylesheet order, 1-2-3, 3rd linked stylesheet wins)
+*/
